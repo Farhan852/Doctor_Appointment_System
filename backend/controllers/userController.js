@@ -198,8 +198,8 @@ const cancelAppointment = async(req,res)=>{
 
 //API to make payment of appointment using razorpay
 const razorpayInstance = new razorpay({
-   key_id:process.env.RZR_KEY_ID,
-   key_secret:process.env.RZR_KEY_SECRET
+   key_id:process.env.RAZORPAY_KEY_ID,
+   key_secret:process.env.RAZORPAY_KEY_SECRET
 })
 
 const paymentRazorpay = async(req,res)=>{
